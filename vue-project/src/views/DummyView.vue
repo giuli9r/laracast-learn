@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>This is an dummy lazy-load page.</h1>
-    <p>Nothing to see here.</p>
+    <p>Check  <a href="https://vuejs.org/guide/introduction.html#api-styles" target="_blank" rel="noopener">Composition API</a>!</p>
   </div>
 </template>
 
