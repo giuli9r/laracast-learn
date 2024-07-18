@@ -14,9 +14,9 @@ function write (key, value) {
 }
 
 setTimeout(() => {
-  food.value = "changed";
+  food.value = "autofill";
 }
-, 2000)
+, 3000)
 </script>
 
 <template>
