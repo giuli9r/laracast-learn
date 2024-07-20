@@ -8,6 +8,10 @@ let age = ref(localStorage.getItem('age'));
 watch(food, (val) => {
   write('food', val)
 })
+watch(age, (val) => {
+  write('age', val)
+})
+
 
 function write (key, value) {
   localStorage.setItem(key, value);
