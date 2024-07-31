@@ -18,7 +18,7 @@
   
     <div>
       <h3>
-        <img src="/smily.png" alt="smily face" class="mr-2">
+        <img src="" alt=":)" class="mr-2 w-5 h-5">
         Smiley Team
         <div class="bg-green-400 w-5 h-5 text-xs text-white rounded-full flex justify-center items-center absolute -rigth-4 top-2">
           5
