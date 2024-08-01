@@ -1,7 +1,7 @@
 <script setup>
 // import team from "@/team.json";
 // import TeamHeader from "@/components/Teams/TeamHeader.vue";
-// import TeamMembers from "@/components/Teams/TeamMembers.vue";
+import TeamMember from "@/components/TeamMember.vue";
 // import TeamFooter from "@/components/Teams/TeamFooter.vue";
 </script>
 
@@ -36,50 +36,10 @@
       </thead>
 
       <tbody>
-        <!-- Joe -->
-        <tr class="bg-gray-100 px-12">
-          <td class="text-xl font-medium flex items-center gap-x-4 px-6 py-4">
-            <img src="https://i.pravatar.cc/50?u=james@doe.com" alt="Joe" class="rounded-xl">
-            James Doe
-          </td>
-          <td class="text-gray-500 px-6 py-4">james@doe.com</td>
-          <td class="px-6 py-4">
-            <button class="text-green-400 text-xl"> Active </button>
-          </td>
-        </tr>
-        <!-- Sarah -->
-        <tr class="bg-gray-100 px-12">          
-          <td class="text-xl font-medium flex items-center gap-x-4 px-6 py-4">
-            <img src="https://i.pravatar.cc/50?u=sarah@doe.com" alt="Sarah" class="rounded-xl">
-            Sarah Doe
-          </td>
-          <td class="text-gray-500 px-6 py-4">sarah@doe.com</td>
-          <td class="px-6 py-4">
-            <button class="text-green-400 text-xl"> Active </button>
-          </td>
-        </tr>
-        <!-- Steven -->
-        <tr class="bg-gray-100 px-12">
-          <td class="text-xl font-medium flex items-center gap-x-4 px-6 py-4">
-            <img src="https://i.pravatar.cc/50?u=steven@doe.com" alt="Steven" class="rounded-xl">
-            Steven Doe
-          </td>
-          <td class="text-gray-500 px-6 py-4">steven@doe.com</td>
-          <td class="px-6 py-4">
-            <button class="text-green-400 text-xl"> Active </button>
-          </td>
-        </tr>
-         <!-- Messi -->
-         <tr class="bg-gray-100 px-12">
-          <td class="text-xl font-medium flex items-center gap-x-4 px-6 py-4">
-            <img src="https://i.pravatar.cc/50?u=messi@doe.com" alt="Messi" class="rounded-xl">
-            Messi Doe
-          </td>
-          <td class="text-gray-500 px-6 py-4">messi@doe.com</td>
-          <td class="px-6 py-4">
-            <button class="text-green-400 text-xl"> Active </button>
-          </td>
-        </tr>
+        <TeamMember name="John Dow" email="jonh@mail.com" status="Active"></TeamMember>
+        <TeamMember name="Steven Doe" email="steven@doe.com" status="Active"></TeamMember>
+        <TeamMember name="Sarah Doe" email="sarah@mail.com" status="Active"></TeamMember>
+        <TeamMember name="Messi Doe" email="messi@doe.com" status="Active"></TeamMember>
       </tbody>
 
     </table>
