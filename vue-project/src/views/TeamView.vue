@@ -1,8 +1,10 @@
 <script setup>
 // import team from "@/team.json";
+import team from "./../team.json"
 // import TeamHeader from "@/components/Teams/TeamHeader.vue";
 import TeamMember from "@/components/TeamMember.vue";
 // import TeamFooter from "@/components/Teams/TeamFooter.vue";
+console.log(team);
 </script>
 
 <template>
@@ -36,12 +38,8 @@ import TeamMember from "@/components/TeamMember.vue";
       </thead>
 
       <tbody>
-        <TeamMember name="John Dow" email="jonh@mail.com" status="Active"></TeamMember>
-        <TeamMember name="Steven Doe" email="steven@doe.com" status="Active"></TeamMember>
-        <TeamMember name="Sarah Doe" email="sarah@mail.com" status="Active"></TeamMember>
-        <TeamMember name="Messi Doe" email="messi@doe.com" status="Active"></TeamMember>
+        <TeamMember v-for="(m) in team" :name="m.name" :email="m.email" :status="m.status" :key="m.id" ></TeamMember>
       </tbody>
-
     </table>
 
     <p class="text-rigth text-gray-100 py-4 text-center">
