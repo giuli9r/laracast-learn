@@ -10,20 +10,20 @@ console.log(team);
 <template>
   <div id="wrapper">
 
-    <header>
+    <header class="flex space-between">
       <div>
         <button 
-        class="ng-green-500 hover:bg-green-600 text-white px-4 rounded disabled:bg-gray-400"
-        :disabled="true">Add MEMBER (0 Spots Left)
+        class=":not(:hover):bg-green-200 hover:bg-green-600 text-black px-4 py-2 rounded" :disabled="team.members.length == team.spots"
+        >Add MEMBER ( {{ team.spots - team.members.length }} Spots Left)
         </button>
       </div>
   
     <div>
-      <h3>
-        <img src="" alt=":)" class="mr-2 w-5 h-5">
-        Smiley Team
-        <div class="bg-green-400 w-5 h-5 text-xs text-white rounded-full flex justify-center items-center absolute -rigth-4 top-2">
-          5
+      <h3 class="inline-flex items-center text-3xl relative">
+        <img src="" alt=":)" class="mr-2 ">
+        {{ team.name }} Team
+        <div class="bg-green-400 w-5 h-5 text-xs text-white rounded-full flex justify-center items-center absolute rigth-4 top-2">
+          {{ team.spots }}
         </div>
       </h3>
     </div>
@@ -38,18 +38,19 @@ console.log(team);
       </thead>
 
       <tbody>
-        <TeamMember v-for="(m) in team" :name="m.name" :email="m.email" :status="m.status" :key="m.id" ></TeamMember>
+        <TeamMember v-for="(m) in team.members" :name="m.name" :email="m.email" :status="m.status" :key="m.id" ></TeamMember>
       </tbody>
     </table>
 
-    <p class="text-rigth text-gray-100 py-4 text-center">
+    <p class="text-rigth text-gray-500 py-4 text-center" v-show="team.spots <= team.members.length">
       There are no remaining team sports. Upgrade to add more.
     </p>
   </div>
 
   <footer class="mt-12 bg-gray-100 py-4 text-center">
-    <h5 class="font-semibold text-lg" > Smiley - 5 Member Team</h5>
+    <h5 class="font-semibold text-lg" >  {{ team.name }} -  {{ team.spots }} Member Team</h5>
   </footer>
+
   </div>
 
   <!-- <TeamHeader :team="team" /> -->
