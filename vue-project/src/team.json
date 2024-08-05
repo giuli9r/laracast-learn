@@ -1,26 +1,31 @@
-[
-    {
-        "id" : 1,
-        "name": "Messi",
-        "email": "messi@fulbo.com",
-        "status": "Active"
-    },
-    {
-        "id" : 2,
-        "name": "Sarah",
-        "email": "sarah@mail.com",
-        "status": "Active"
-    },
-    {
-        "id" : 3,
-        "name": "John",
-        "email":  "johnh@mail.com",
-        "status": "Active" 
-    },
-    {
-        "id" : 4,
-        "name": "Steven",
-        "email":  "steven@mail.com",
-        "status": "Active"
-    }
-]
+{
+    "name": "Crypto",
+    "spots" : 6,
+    "members": [
+
+        {
+            "id" : 1,
+            "name": "Messi",
+            "email": "messi@fulbo.com",
+            "status": "Active"
+        },
+        {
+            "id" : 2,
+            "name": "Sarah",
+            "email": "sarah@mail.com",
+            "status": "Active"
+        },
+        {
+            "id" : 3,
+            "name": "John",
+            "email":  "johnh@mail.com",
+            "status": "Active" 
+        },
+        {
+            "id" : 4,
+            "name": "Steven",
+            "email":  "steven@mail.com",
+            "status": "Active"
+        }
+    ]
+}
